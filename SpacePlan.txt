@@ -1,0 +1,20 @@
+I am going to write down the craziest idea that I have:
+1. Make a collective of all the aerospace companies in India
+2. Devise solutions to create space colonies in space, as in:
+	a. Moon Base
+	b. Moon Orbiting Station
+	c. Mars base
+	d. Mars Orbiting Station
+	e. Venus Orbiting Station -> Optional
+	f. Asteroid Mining Rigs.
+	g. Deep space Probes.
+	h. Earth Orbiting station to replace ISS, bigger, better.
+	i. Relay communication network with near earth satellite system.
+	j. Asteroid ferry system.
+	k. Space tourism launches, cheap, viable and frequent.
+	l. Outer solar system probes.
+	m. Solar observatory.
+3. At the core of each of these spacecrafts and missions has be
+standardized ports, components with mix and match capabilities.
+This will enable greater international cooperation, and accelarated
+operational framework. 

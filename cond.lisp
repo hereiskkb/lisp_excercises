@@ -1,0 +1,5 @@
+(defun cond-demo()
+    (cond ((< 4 10) '(something has to be done)
+                    '(or there will be nothing left to do))
+          ((> 10 4) '(this is the same condition as before)
+                    '(no clue what to do yet))))

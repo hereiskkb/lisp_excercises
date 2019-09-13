@@ -51,6 +51,10 @@
     "Return siblings of the given node"
     (remove-if #'(lambda (e) (equal e x)) (reduce #'union (remove-if #'null (mapcar #'children (parents x))))))
 
-(defun mapunion (x func)
+(defun mapunion (func x)
     "Apply given function to the list and union to the result"
     (reduce #'union (mapcar func x)))
+
+(defun grandparents (x)
+    "Find set representing the grandparent of x"
+    )
