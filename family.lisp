@@ -57,4 +57,24 @@
 
 (defun grandparents (x)
     "Find set representing the grandparent of x"
-    )
+    (mapunion #'parents (parents x)))
+
+(defun cousins (x)
+	"Person's genetically related first cousins"
+	(mapunion #'children (mapunion #'siblings (parents x))))
+
+(defun descended-from (x y)
+	"return true if the first person descends from the second"
+	(cond ((null x) nil)
+			((or (equal (father x) y) (equal (mother x) y)) T)
+			(t (or (descended-from (father x) y) (descended-from (mother x) y)))))
+
+(defun ancestors (x)
+	"Returns a set of ancestors for x"
+	(cond ((null x) nil)
+			(t (remove-if #'null (append (parents x) (ancestors (father x)) (ancestors (mother x)))))))
+
+(defun generation-gap (x y)
+	"Number of generations separating x from y"
+	(cond ((null (descended-from x y)) 0)
+			()))
