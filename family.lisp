@@ -76,5 +76,9 @@
 
 (defun generation-gap (x y)
 	"Number of generations separating x from y"
-	(cond ((null (descended-from x y)) 0)
-			()))
+	(gen-gap-helper y 1 (parents x)))
+
+(defun gen-gap-helper (y n listx)
+	(cond ((null listx) nil)
+			((member y listx) n)
+			(t (gen-gap-helper y (+ n 1) (remove-if #'null (reduce #'union (mapcar #'(lambda (entry) (parents entry)) listx)))))))
